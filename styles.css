@@ -1,0 +1,119 @@
+/* center the header and logo */
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;   /* center the content horizontally */
+    gap: 95px;
+}
+
+header img
+{
+    width: 150px;
+    height: 150px;
+    margin-left: 50px; 
+    margin-right: 50px;
+}
+
+/* make the navigation menu horizontal*/
+nav ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color : #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 2px solid #f3f3f3;
+    border-radius: 10px;
+    background-color: rgba(227, 234, 252, 0.7);
+}
+
+nav a:hover {
+    background: #4a69bd;
+    color: #fff;
+}
+
+nav {
+    margin-top: 0;
+}
+
+/* add style to body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav li {
+    margin: 0 15px; 
+}
+/*make the main content and sidebar is side by side*/
+main {
+    display: flex;
+    margin: 10px auto; /* less top margin */
+    max-width: 1000px;
+    gap: 20px;
+}
+
+/* add style to sidebar */
+aside {
+    width: 200px;
+    background-color: rgba(249, 249, 249, 0.85); /* less transparent */
+    padding: 15px;
+    border-radius: 8px;
+    backdrop-filter: blur(4px); /* adds blur */
+}
+
+/* add style to article */
+article {
+    flex: 1;
+    background-color: rgba(249, 249, 249, 0.85); /* less transparent */
+    padding: 15px;
+    border-radius: 8px;
+    backdrop-filter: blur(4px); 
+}
+
+/*style the footer*/
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e3eafc;
+    margin-top: 30px;
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+.schedule-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #333;
+    padding: 6px;
+    text-align: left;
+}
+
+.house-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+.house-table th, .house-table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
